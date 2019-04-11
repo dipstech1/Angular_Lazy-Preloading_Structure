@@ -8,7 +8,7 @@ import { IndexComponent } from './index.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
-import { AuthGuard } from '../guards/auth.guard';
+import { AuthGuard } from '../core/guards/auth.guard';
 
 // Define the routes
 export const indexRoute :Routes = [

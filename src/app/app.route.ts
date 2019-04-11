@@ -4,8 +4,8 @@ import { indexRoute } from "./index/index.route";
 import { noPageRoute } from "./no-page/nopage.route";
 import { HomeComponent } from './home/home.component';
 import { IndexComponent } from './index/index.component';
-import { AuthGuard } from './guards/auth.guard';
-import { LoginGuard } from './guards/login.guard';
+import { AuthGuard } from './core/guards/auth.guard';
+import { LoginGuard } from './core/guards/login.guard';
 
 export const route: Routes = [
   {
@@ -19,6 +19,6 @@ export const route: Routes = [
     component:IndexComponent,
     canActivate:[LoginGuard],
     loadChildren: "./index/index.module#IndexModule"
-  },
+  }, 
   ...noPageRoute
 ];

@@ -3,7 +3,7 @@ import { HomeComponent } from './home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ProductsComponent } from './products/products.component';
-import { AuthGuard } from '../guards/auth.guard';
+import { AuthGuard } from '../core/guards/auth.guard';;
 
 
 export const homeRoute :Route[] = [

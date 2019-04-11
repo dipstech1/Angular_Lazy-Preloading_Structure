@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import {TestService} from '../../core/services/test.service'
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor(private t : TestService) { }
 
   ngOnInit() {
+    this.t.doTest().subscribe(res => {
+      console.log("///// ", res);
+      
+    })
   }
 
 }
